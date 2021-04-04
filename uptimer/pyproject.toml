@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "uptimer"
+version = "0.1.0"
+description = ""
+authors = ["Felix Vemmer <felix.vemmer@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^7.1.2"
+requests = "^2.25.1"
+colorama = "^0.4.4"
+pip = "^21.0.1"
+install = "^1.3.4"
+pytest-mock = "^3.5.1"
+sphinx-click = "^2.7.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+Sphinx = "^3.5.3"
+
+[tool.poetry.scripts]
+uptimer = "uptimer.uptimer:check"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
